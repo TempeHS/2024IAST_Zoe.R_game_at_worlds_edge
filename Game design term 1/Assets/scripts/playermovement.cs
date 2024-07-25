@@ -23,13 +23,13 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
     //movement
-    float horizontalinput = Input.GetAxis("Horizontal");
-    body.velocity = new Vector2(horizontalinput * speed, body.velocity.y);
+    float horizontalInput = Input.GetAxis("Horizontal");
+    body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
  
     //flip character when moving left and right
-    if(horizontalinput > 0.01f)
+    if(horizontalInput > 0.01f)
         transform.localScale = new Vector3(1, 1, 1);
-    else if(horizontalinput < -0.01f)
+    else if(horizontalInput < -0.01f)
         transform.localScale = new Vector3(-1, 1, 1);
     
      //jump
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         Jump();
 
     //animations
-    anim.SetBool("run", horizontalinput != 0);
+    anim.SetBool("run", horizontalInput != 0);
     anim.SetBool("grounded", isGrounded());
 
     print(onWall());
