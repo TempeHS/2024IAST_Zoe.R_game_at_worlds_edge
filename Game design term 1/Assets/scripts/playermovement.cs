@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
     //movement
-    float horizontalInput = Input.GetAxis("Horizontal");
+    horizontalInput = Input.GetAxis("Horizontal");
 
     //flip character when moving left and right
     if(horizontalInput > 0.01f)
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
     anim.SetBool("grounded", isGrounded());
 
     //wall jump logic
-    if(wallJumpCooldown < 0.2f)
+    if(wallJumpCooldown > 0.2f)
         {
             body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
@@ -68,7 +68,14 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(onWall() && !isGrounded())
         {
-
+            if(horizontalInput == 0)
+            {
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 10, 0);
+                transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+            else 
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 2, 4);
+            wallJumpCooldown = 0;
         }
     }
  
