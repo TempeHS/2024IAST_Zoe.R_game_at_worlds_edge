@@ -78,12 +78,6 @@ public class PlayerMovement : MonoBehaviour
             wallJumpCooldown = 0;
         }
     }
- 
-    //checking if the player is on the ground
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
-    }
 
     private bool isGrounded()
     {
