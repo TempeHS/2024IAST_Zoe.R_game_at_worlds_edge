@@ -1176,9 +1176,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1293326258}
   - component: {fileID: 1293326257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1221,9 +1221,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1825901362}
   - component: {fileID: 1825901361}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
