@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 499703850}
   - component: {fileID: 499703849}
   - component: {fileID: 499703848}
+  - component: {fileID: 499703853}
   m_Layer: 7
   m_Name: wall_tilemap
   m_TagString: Ground
@@ -195,23 +196,9 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 499703850}
-    m_ColliderPaths:
-    - - X: -110000000
-        Y: 0
-      - X: -125000000
-        Y: 0
-      - X: -125000000
-        Y: -45000000
-      - X: -110000000
-        Y: -45000000
+  m_ColliderPaths: []
   m_CompositePaths:
-    m_Paths:
-    - - {x: -11.00003, y: -4.5}
-      - {x: -11.00003, y: 0}
-      - {x: -12.5, y: -0.000029300001}
-      - {x: -12.49997, y: -4.5}
+    m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -250,7 +237,7 @@ TilemapCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499703846}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -700,6 +687,41 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!70 &499703853
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499703846}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -23.545227, y: -4.559704}
+  m_Size: {x: 2.909546, y: 11.703884}
+  m_Direction: 0
 --- !u!1 &775152666
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +749,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a4d69f67e8575426b8f11a788603066b, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1180,7 +1202,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.6824901
+  orthographic size: 1.6017146
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
