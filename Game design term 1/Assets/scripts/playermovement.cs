@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     //animations
     anim.SetBool("run", horizontalInput != 0);
     anim.SetBool("grounded", isGrounded());
+    anim.SetBool("wall", onWall());
 
     //wall jump logic
     if(wallJumpCooldown > 0.2f)
