@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 96446770}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: makeshift ground (for the actual gameplay)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1071,7 +1071,7 @@ GameObject:
   - component: {fileID: 775152668}
   - component: {fileID: 775152667}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
