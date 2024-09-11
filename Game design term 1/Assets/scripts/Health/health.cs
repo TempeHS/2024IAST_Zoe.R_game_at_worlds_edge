@@ -7,6 +7,7 @@ public class health : MonoBehaviour
 [SerializeField] private float startingHealth;
 public float currentHealth { get; private set; }
 private Animator anim;
+private bool riplmao; 
 
 private void Awake()
 {
@@ -21,10 +22,17 @@ public void TakeDamage(float _damage)
     if (currentHealth > 0)
     {
         //player is damaged
+        //add iframes later :3
     }
     else
     {
-        anim.SetTrigger("die");
+        if(!riplmao)
+        {
+            anim.SetTrigger("die");
+            GetComponent<PlayerMovement>().enabled = false;
+            riplmao = true;
+        }
+
     }
 }
 
