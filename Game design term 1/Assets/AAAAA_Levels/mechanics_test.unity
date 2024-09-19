@@ -2904,7 +2904,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.5000505, y: -4.498595}
+  m_Offset: {x: -7.5000505, y: -4.5079}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2915,7 +2915,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0032444, y: 1.002809}
+  m_Size: {x: 1.0032444, y: 0.9842}
   m_EdgeRadius: 0
 --- !u!19719996 &1889433021
 TilemapCollider2D:
@@ -3494,6 +3494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec7a837ab95a455192f5f06189e2164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthValue: 0
 --- !u!212 &2050039434
 SpriteRenderer:
   m_ObjectHideFlags: 0
