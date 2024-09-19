@@ -35,5 +35,10 @@ public void TakeDamage(float _damage)
 
     }
 }
+piblic void AddHealth(float _value)
+{
+    currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+
+}
 
 }
