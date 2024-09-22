@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/AAAAA_Levels/main menu.unity
     guid: 2d3af21e76ac144389468bb0830c7d79
   - enabled: 1
-    path: Assets/AAAAA_Levels/mechanics_test.unity
+    path: Assets/AAAAA_Levels/level1.unity
     guid: 16b87aa720652427daf45ac62ab605ae
   m_configObjects: {}
