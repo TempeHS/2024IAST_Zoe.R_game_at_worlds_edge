@@ -45,6 +45,10 @@ As I mentioned in the features section of the developer documentation, the featu
 
 The first major issue I had with wall jumping was laughably easy to fix once I actually found the source of the issue. The tutorial which I was following had a part where it tested whether or not the player was on the wall in order to make sure the initial code was working before proceeding to adding the acutal walls. The idea was that the console would print 'true' if the player was touching the wall, and 'false' if they weren't. It was pretty simple, however my game kept returning true even when I wasn't near the wall. 
 
-The root of the problem turned out to be that I had duplicated the tilemap of the floor when creating the wall, as I wanted to make sure I didn't miss adding any important properties (as the only real difference between the floor and wall was that one of them was classified as a well and one wasnt). However in doing this, I completely forgot to remove the tiles which belonging to the initial floor tilemap, causing the floor to be a part of the wall. 
+The root of the problem turned out to be that I had duplicated the tilemap of the floor when creating the wall, as I wanted to make sure I didn't miss adding any important properties (as the only real difference between the floor and wall was that one of them was classified as a well and one wasnt). However in doing this, I completely forgot to remove the tiles which belonging to the initial floor tilemap, causing the floor to be a part of the wall. This was probably the worst bug out of all of my code, as it was an extremely simple fix, yet it took several weeks to fix, since I didn't even think to check that part. 
 
-This was probably the worst bug out of all of my code, as it was an extremely simple fix, yet I couldn't find what was wrong for several weeks, as I didn't even think to check that part. 
+After this, there was only one other big issue I had with the colliders, where the collider I was using for the wall was causing the player to get stuck to the wall, however changing the collider and messing around with the settings seemed to fix this. 
+
+### Collider and Hitbox Issues (Health and Damage)
+
+### Wall and Floor Issues
