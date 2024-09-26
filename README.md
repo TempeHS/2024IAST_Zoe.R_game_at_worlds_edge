@@ -51,4 +51,5 @@ After this, there was only one other big issue I had with the colliders, where t
 
 ### Collider and Hitbox Issues (Health and Damage)
 
+
 ### Wall and Floor Issues
