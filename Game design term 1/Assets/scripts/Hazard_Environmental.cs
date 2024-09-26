@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Hazard_Environmental : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class Hazard_Environmental : MonoBehaviour
         if(collision.tag == "Player")
         {
             collision.GetComponent<health>().TakeDamage(damage);
-            
+
         }
     }
 }

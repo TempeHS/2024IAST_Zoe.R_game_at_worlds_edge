@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AAAAA_Levels/finishgame.unity
     guid: bc4f838a6033a4948bf6e0c97c95934a
+  - enabled: 1
+    path: Assets/AAAAA_Levels/gameover.unity
+    guid: 87336c8d457dc4985978747d9ec3299d
   m_configObjects: {}

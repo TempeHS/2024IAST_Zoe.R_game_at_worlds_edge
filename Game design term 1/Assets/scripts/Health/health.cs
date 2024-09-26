@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class health : MonoBehaviour
 {
@@ -31,9 +32,15 @@ public void TakeDamage(float _damage)
             anim.SetTrigger("die");
             GetComponent<PlayerMovement>().enabled = false;
             riplmao = true;
+            Invoke ("GameOver", 5);
+
         }
 
     }
+}
+private void GameOver()
+{
+    SceneManager.LoadSceneAsync(4);
 }
 public void AddHealth(float _value)
 {
