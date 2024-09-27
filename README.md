@@ -10,7 +10,7 @@ Space bar - allows the player to jump
 
 The game has no mouse controls other than clicking on buttons to activate them
 
-[insert an image of the player's walk sprite here]
+![](readme_images/ezgif-7-9cb5ebf1fc.gif)
 
 ## Objectives and Walkthrough
 In a world powered by an unstable machine, the fabric of reality is slowly being destroyed by the very thing that gives it life. The tears caused by the machine have led to 'glitches' in the world's environment, which range from inconvenient to outright dangerous for it's residents. 
@@ -19,6 +19,7 @@ You play as Pilot, a rouge android who's mission is to restore an older machine,
 
 As the player, your objective is to traverse through various environments, ranging from grassy plains to abandoned factories to bustling towns, exploring the environment using mechanics such as climbing in order to maneuver in the corrupted environment, and interacting with various NPCs in order to find and collect the different parts of this old machine.
 
+![](readme_images/ezgif-7-e4bd7f297d.gif)
 
 # Developer Documentation
 ## Multimedia
@@ -31,6 +32,8 @@ For the movement and jumping code, I followed the tutorials listed above, since 
 ### Wall jumping
 Wall jumping was a little harder for me to code, as I was continously encountering issues unrelated to the code, meaning I couldn't look through the tutorial to try to fix them. Almost all of these issues were related to the hitboxes and colliders of various game objects, which made the bugs much harder to find, as this wasn't something I initially thought to check. 
 ### Hazards and Health
+![](readme_images/uh.png)
+
 For the hazards and health, I decided to modify the code and features in the tutorial, as what I wanted for the health system in my game was slightly different to what the tutorial presented. These modifications were mainly minor things, such as changing the amount of maximun health that the player had from 3 to 5, which I changed for two reasons. The first reason being that I wanted to make the game more accessible to players who might not be as experienced with platformers, since I myself am not the greatest at them, and the second being that I intended for my levels to be a lot longer than those shown in the tutorial, with a lot more environmental hazards that the player must avoid (as this is related to the main plot of the game). 
 
 I also changed the type of hazard added in as a base, in order to better fit the aesthetic and worldbuilding of my game. 
@@ -44,12 +47,19 @@ After some thinking I realised that the logic I wanted to use for the parallax b
 The first idea I had for making it into a proper parallax was to find a camera movement code which allowed the camera to look further ahead when the player moved left and right. This way, the background would move at a different speed to the player when they were moving. Thinking back on it, this very likely wouldn't have produced the effect I wanted for the background, however I didn't end up getting to the point of actually coding this in anyway as many of the examples I was looking at were much more complex than my base camera movement code. 
 
 While skimming through a few tutorials, I found a devlog which mentioned that parallax backgrounds are simply the different elements of the background moving at different speeds, which gave me a new idea for how to create the parallax background. After browsing a few more forum posts and a few more compilation errors, I had the idea to simply subsitute the code for the player's speed into the section controlling camera movement, which ended up working extremely well once I figured out how to properly set the speed of different objects (which was to set the background's speed to 1, and lower the speed slightly the closer to the foreground the objects were). 
+
+![](readme_images/yeagh.png)
+
 ### Menus and levels
 As this was another skill I did not know how to do initially, I used [this tutorial](https://www.youtube.com/watch?v=E25JWfeCFPA) to learn how to switch between scenes and [this tutorial](https://www.youtube.com/watch?v=DX7HyN7oJjE) to learn how to use buttons in unity, as well as certain UI functions and how to quit the game. I only used these for the main menu and level transitions, as everything else I had learned how to do by that point. 
 
 Initially for the ending screen, which sent the player back to the first level, my code was much more complex than it needed to be. The code utilised a different public void in the scene controller script, then utilised an if statement so that if the level's build index was equal to that of the ending screen, the player would be sent back to the start. I coded this in before I added the buttons (which had a line of code that sent the player to a specific level), so I ended up deleting it as what I added in the final game was a lot more efficient. 
 
+
+
 ## Bug Fixing
+![](readme_images/goofy.png)
+
 ### Collider and Hitbox Issues (Wall Jumping)
 As I mentioned in the features section of the developer documentation, the feature which I had the most trouble with while adding (and was considering scrapping altogether). A large majority of these bugs were due to collider issues, which were easy enough to fix once I found them, however they were quite hard to actually find in the first place, as I was basically still a complete beginner when coding this, and the colliders were the last thing that I thought to check. 
 
@@ -94,3 +104,4 @@ Experience-wise some of the features I plan on adding include:
 
 In future, I hope I can take the skills I learned when creating this game, and utilise them to help with further developing both this game and other games I create in future. 
 
+![](readme_images/end-notext.png)
